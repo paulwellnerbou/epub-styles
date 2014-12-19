@@ -22,15 +22,15 @@ Most epub render engines will render &lt;code&gt; and &lt;pre&gt; tags as a brow
 
 1. Wrap text in &lt;code&gt; and &lt;pre&gt; tags via CSS:
 
-  code, pre {
+  <pre><code>code, pre {
     white-space: pre-wrap;
-  }
+  }</pre></code>
 
 2. Don't use &lt;code&gt; and &lt;pre&gt; tags, use a css class instead:
 
-  .code {
+  <pre><code>.code {
     font-family: monospace;
     white-space: pre-wrap;
-  }
+  }</pre></code>
 
 <code>pre-wrap</code> is a CSS3 property and may not be supported by all epub reader software. See [http://css-tricks.com/snippets/css/make-pre-text-wrap/].
