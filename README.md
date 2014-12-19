@@ -21,11 +21,13 @@ Monospace font embedded in normal paragraphs should ideally use a font and size 
 Most epub render engines will render &lt;code&gt; and &lt;pre&gt; tags as a browser would render them. In principle, thats ok, and it works perfectly for computer screens, tablets and smartphones. But on screens where you are not able to scroll, like ebook reader use to have, a part of the text will disappear behind the right margin. There are two ways to solve this problem:
 
 1. Wrap text in &lt;code&gt; and &lt;pre&gt; tags via CSS:
+
   code, pre {
     white-space: pre-wrap;
   }
 
 2. Don't use &lt;code&gt; and &lt;pre&gt; tags, use a css class instead:
+
   .code {
     font-family: monospace;
     white-space: pre-wrap;
